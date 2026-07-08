@@ -8,6 +8,7 @@ Welcome to the public repository for **[WhenIsTheMatch](https://whenisthematch.c
 
 * **Comprehensive Match Fixtures & Standings:** Up-to-date tables and schedules for major global leagues (Premier League, La Liga, Champions League, etc.).
 * **Live Scores & Match Events:** Match updates for goals, cards, and substitutions, regularly refreshed during active windows.
+* **Real-Time Lineups & Player Scores:** Official starting lineups, tactical formations, and live player performance ratings as the action unfolds.
 * **Broadcast Information:** Quick insights on match cards showing available TV stations and broadcasting channels where available.
 * **Video Highlights:** Quick access to official post-match video highlights, no geo-restriction walls.
 * **No Account Required:** Access localized dates, times, and match reminders instantly without signing up.
