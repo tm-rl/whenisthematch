@@ -31,9 +31,6 @@ team
 (required)
 The team slug used in the widget URL.
 
-Example:
-[whenisthematch team="spain"]
-
 lang
 (optional)
 The language of the widget. If omitted, English is used.
@@ -54,22 +51,6 @@ Display a small WhenIsTheMatch attribution link below the widget.
 
 Example:
 [whenisthematch team="spain" lang="es" branding="true"]
-
-== Finding team slugs ==
-
-You can find the correct team slug on WhenIsTheMatch:
-
-1. Lookup your team on https://whenisthematch.com
-
-2. The team slug is the last part of the URL.
-
-Example:
-
-Team page:
-https://whenisthematch.com/team/manchester-united
-
-Team slug:
-manchester-united
 
 == Frequently Asked Questions ==
 
