@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
 }
 
 
-function witm_widget_shortcode($atts) {
+function whenisthematch_widget_shortcode($atts) {
 
     $atts = shortcode_atts(
         array(
@@ -58,7 +58,7 @@ function witm_widget_shortcode($atts) {
                 style="display:inline-flex;align-items:center;gap:6px;color:#555;text-decoration:none;"
             >
                 <img
-                    src="https://whenisthematch.com/favicon.svg"
+                    src="<?php echo esc_url( plugins_url( '/assets/favicon.svg', dirname( __FILE__ ) ) ); ?>"
                     alt="WhenIsTheMatch"
                     style="height:16px;width:auto;"
                 />
@@ -77,5 +77,5 @@ function witm_widget_shortcode($atts) {
 
 add_shortcode(
     'whenisthematch',
-    'witm_widget_shortcode'
+    'whenisthematch_widget_shortcode'
 );

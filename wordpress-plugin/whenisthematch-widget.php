@@ -14,12 +14,12 @@ if (!defined('ABSPATH')) {
 }
 
 define(
-    'WITM_WIDGET_VERSION',
+    'WHENISTHEMATCH_WIDGET_VERSION',
     '1.0.0'
 );
 
 define(
-    'WITM_WIDGET_PLUGIN_DIR',
+    'WHENISTHEMATCH_WIDGET_PLUGIN_DIR',
     plugin_dir_path(__FILE__)
 );
 
@@ -27,27 +27,27 @@ define(
 /**
  * Load plugin files
  */
-require_once WITM_WIDGET_PLUGIN_DIR . 'includes/shortcode.php';
+require_once WHENISTHEMATCH_WIDGET_PLUGIN_DIR . 'includes/shortcode.php';
 
 
 /**
  * Load frontend assets
  */
-function witm_widget_enqueue_scripts() {
+function whenisthematch_widget_enqueue_scripts() {
 
     wp_enqueue_script(
-        'witm-widget',
+        'whenisthematch-widget',
         plugins_url(
             'assets/widget.js',
             __FILE__
         ),
         array(),
-        WITM_WIDGET_VERSION,
+        WHENISTHEMATCH_WIDGET_VERSION,
         true
     );
 }
 
 add_action(
     'wp_enqueue_scripts',
-    'witm_widget_enqueue_scripts'
+    'whenisthematch_widget_enqueue_scripts'
 );
