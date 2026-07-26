@@ -9,12 +9,11 @@ window.addEventListener("message", function(event) {
     }
 
     document
-        .querySelectorAll(".witm-widget")
+        .querySelectorAll("iframe.witm-widget")
         .forEach(function(frame) {
-
-            frame.style.height =
-                event.data.height + "px";
-
+            if (frame.contentWindow === event.source) {
+                frame.style.height = event.data.height + "px";
+            }
         });
 
 });
