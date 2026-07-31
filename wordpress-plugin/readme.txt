@@ -1,74 +1,58 @@
 === WhenIsTheMatch Widget ===
 Contributors: whenisthematch
-Tags: football, soccer, fixtures, live scores
+Tags: football, soccer, fixtures, live scores, countdown
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPLv2 or later
 
-Display your team's next match and live score.
+Display live football scores, upcoming fixture countdowns, and TV broadcast info for 800+ teams.
 
 == Description ==
 
-Show your visitors the next match of their favorite football team.
+Keep your sports site visitors engaged with dynamic match updates! **WhenIsTheMatch Widget** lets you easily display your favorite team's next upcoming football match along with real-time score updates during game day.
 
-Features:
-* Next match countdown
-* Live score updates
-* 800+ teams
-* Multiple languages
+Perfect for fan blogs, sports news portals, and local club websites looking for a clean, responsive match preview block.
+
+### ⚽ Key Features
+* **Next Match Countdown:** Dynamic timer counting down to kick-off.
+* **Live Score Updates:** Real-time scores and goal tracking for ongoing matches.
+* **Detailed Match Info:** Venue, referee details, and TV channel broadcasts (where available).
+* **800+ Teams Supported:** Full coverage across major international leagues, cups, and club teams.
+* **Multilingual Ready:** Adapts smoothly for international audiences.
+* **Lightweight & Fast:** Built with performance in mind to avoid slowing down your site.
 
 == Usage ==
 
-Add the widget using the shortcode:
+Display the widget anywhere on your site (posts, pages, sidebar widgets) using shortcodes.
 
-[whenisthematch team="my-team-slug"]
+### Quick Start
+`[whenisthematch team="spain"]`
 
-Available parameters:
+### Parameters
 
-team
-(required)
-The team slug used in the widget URL.
+* **team** *(required)*: The slug for the team you want to display (e.g., `real-madrid`, `arsenal`, `spain`). You can find team slugs on WhenIsTheMatch.com.
+* **lang** *(optional)*: Widget language code. Options: `en` (default), `fr`, `es`, `it`, `de`, `pt`, `ja`, `hi`.
+* **branding** *(optional)*: Set to `true` to display a subtle link below the widget. Enabling this helps support ongoing free plugin development! *(Default: `false`)*
 
-lang
-(optional)
-The language of the widget. If omitted, English is used.
+### Shortcode Examples
 
-Available languages:
-* English (default)
-* French (fr)
-* Spanish (es)
-* Italian (it)
-* German (de)
-* Portuguese (pt)
-* Japanese (ja)
-* Hindi (hi)
+**Basic Spanish Match Widget:**
+`[whenisthematch team="barcelona" lang="es"]`
 
-branding
-(optional)
-Display a small WhenIsTheMatch attribution link below the widget.
-
-Example:
-[whenisthematch team="spain" lang="es" branding="true"]
+**Widget with Support Branding Enabled:**
+`[whenisthematch team="chelsea" branding="true"]`
 
 == Frequently Asked Questions ==
 
 = Where can I find team slugs? =
 
-You can find the correct team slug on WhenIsTheMatch.
+1. Search for your team on [WhenIsTheMatch](https://whenisthematch.com).
+2. Look at the end of the website address (URL). The slug is the last part!
 
-Search for your team on https://whenisthematch.com
-Open your team's page.
-The team slug is the last part of the URL.
-
-Example:
-
-Team page:
-https://whenisthematch.com/team/spain
-
-Team slug:
-spain
+* **Example URL:** `https://whenisthematch.com/team/spain`
+* **Your Team Slug:** `spain`
 
 == External Services ==
 
