@@ -15,6 +15,9 @@ Keep your sports site visitors engaged with dynamic match updates! **WhenIsTheMa
 
 Perfect for fan blogs, sports news portals, and local club websites looking for a clean, responsive match preview block.
 
+🌐 **Guide in Your Language**
+[English • Français • Español • Italiano • Deutsch • Português • 日本語 • हिंदी](https://whenisthematch.com/guides/wordpress-widget)
+
 ### ⚽ Key Features
 * **Next Match Countdown:** Dynamic timer counting down to kick-off.
 * **Live Score Updates:** Real-time scores and goal tracking for ongoing matches.
