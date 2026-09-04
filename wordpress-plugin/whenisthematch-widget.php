@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WhenIsTheMatch Widget
  * Description: Display your football team's next match and live score on your WordPress website.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: WhenIsTheMatch
  * Author URI: https://whenisthematch.com
  * License: GPLv2 or later
@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 
 define(
     'WHENISTHEMATCH_WIDGET_VERSION',
-    '1.0.0'
+    '1.1.0'
 );
 
 define(

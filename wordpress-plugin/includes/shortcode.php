@@ -11,6 +11,7 @@ function whenisthematch_widget_shortcode($atts) {
         array(
             'team' => '',
             'lang' => 'en',
+            'theme' => 'dark',
             'branding' => 'false'
         ),
         $atts,
@@ -26,6 +27,10 @@ function whenisthematch_widget_shortcode($atts) {
     $team = sanitize_title($atts['team']);
     $lang = sanitize_key($atts['lang']);
     $branding = filter_var($atts['branding'], FILTER_VALIDATE_BOOLEAN);
+    $theme = strtolower(sanitize_key($atts['theme']));
+    if (!in_array($theme, array('light', 'dark'), true)) {
+        $theme = 'dark';
+    }
 
     $lang_prefix = '';
     if (!empty($lang) && $lang !== 'en') {
@@ -33,9 +38,10 @@ function whenisthematch_widget_shortcode($atts) {
     }
 
     $src = sprintf(
-        'https://whenisthematch.com%s/embed/team/%s',
+        'https://whenisthematch.com%s/embed/team/%s?theme=%s',
         $lang_prefix,
-        $team
+        $team,
+        rawurlencode($theme)
     );
 
     ob_start();

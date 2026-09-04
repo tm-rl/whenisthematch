@@ -4,7 +4,7 @@ Tags: football, soccer, fixtures, live scores, countdown
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 
 Display live football scores, upcoming fixture countdowns, and TV broadcast info for 800+ teams.
@@ -37,12 +37,16 @@ Display the widget anywhere on your site (posts, pages, sidebar widgets) using s
 
 * **team** *(required)*: The slug for the team you want to display (e.g., `real-madrid`, `arsenal`, `spain`). You can find team slugs on WhenIsTheMatch.com.
 * **lang** *(optional)*: Widget language code. Options: `en` (default), `fr`, `es`, `it`, `de`, `pt`, `ja`, `hi`.
+* **theme** *(optional)*: Widget color theme. Options: `dark` (default) or `light`.
 * **branding** *(optional)*: Set to `true` to display a subtle link below the widget. Enabling this helps support ongoing free plugin development! *(Default: `false`)*
 
 ### Shortcode Examples
 
 **Basic Spanish Match Widget:**
 `[whenisthematch team="barcelona" lang="es"]`
+
+**Light Theme Widget:**
+`[whenisthematch team="psg" theme="light"]`
 
 **Widget with Support Branding Enabled:**
 `[whenisthematch team="chelsea" branding="true"]`
@@ -70,8 +74,12 @@ No account or API key is required.
 
 1. The widget displayed on a WordPress page.
 2. The shortcode used to add a team's next match.
+3. The widget using the light theme.
 
 == Changelog ==
 
 = 1.0.0 =
 * Initial release.
+
+= 1.1.0 =
+* Added light theme support to the widget shortcode.
